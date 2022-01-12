@@ -1,14 +1,12 @@
 import java.util.Scanner;
 
-public class Player1 extends Player{
+public class Human extends Player{
 
     @Override
     void makeChoice() {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Player 1");
-        System.out.println("=====");
-        System.out.println("Type 'rock', 'paper', or 'scissors' to play.");
-        System.out.println("Type 'quit' to go back to the main menu.");
+        System.out.println("1. Type 'rock', 'paper', or 'scissors' to play.");
+        System.out.println("2. Type 'quit' to go back to the main menu.");
         String move = scan.next().toLowerCase();
         if (move.equals("rock") || move.equals("scissors") || move.equals("paper")){
             setChoice(move);
